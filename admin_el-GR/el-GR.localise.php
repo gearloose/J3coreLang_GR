@@ -185,7 +185,7 @@ abstract class el_GRLocalise {
 }
 
 jimport('joomla.utilities.date');
-$datefile = JPATH_ROOT . DS . 'libraries' . DS . 'joomla' . DS . 'utilities' . DS . 'date.php';
+$datefile = JPATH_ROOT . DIRECTORY_SEPARATOR . 'libraries' . DIRECTORY_SEPARATOR . 'joomla' . DIRECTORY_SEPARATOR . 'utilities' . DIRECTORY_SEPARATOR . 'date.php';
 
 $fh = fopen($datefile, 'r');
 $theData = fread($fh, filesize($datefile));
