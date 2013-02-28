@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <metafile version="3.0" client="site">
 	<name>Hellenic</name>
-	<version>3.0.3.2</version>
-	<creationDate>2013-02-19</creationDate>
-	<author>Greek translation team : joomla.gr (Modified for 3.0.3 by Nikitas Kyriazis)</author>
+	<version>3.0.3.3</version>
+	<creationDate>2013-02-28</creationDate>
+	<author>Greek translation team : joomla.gr (Unofficial version)</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
 	<copyright>Copyright (C) 2005 - 2012 joomla.gr και Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License έκδοση 2 ή νεότερη; δες LICENSE.txt</license>
-	<description>Greek language pack for Joomla! 3.0.3 [Site] (Modified for 3.0.3 by Nikitas Kyriazis)</description>
+	<description>Hellenic language pack for Joomla! 3.0.3 [Site] (Unofficial version)</description>
 	<metadata>
 		<name>Hellenic</name>
 		<tag>el-GR</tag>
