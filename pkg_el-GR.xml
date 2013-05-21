@@ -2,8 +2,8 @@
 <extension type="package" version="3.0">
 	<name>Greek Language Pack</name>
 	<packagename>el-GR</packagename>
-	<version>##VERSION##</version>
-	<creationDate>##DATE##</creationDate>
+	<version>3.1.0</version>
+	<creationDate>2013-05-21</creationDate>
 	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>

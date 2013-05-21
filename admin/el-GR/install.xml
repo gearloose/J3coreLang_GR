@@ -2,16 +2,15 @@
 <extension version="3.0" client="administrator" type="language" method="upgrade">
 	<name>Hellenic</name>
 	<tag>el-GR</tag>
-	<version>##VERSION##</version>
-	<creationDate>##DATE##</creationDate>
-	<author>Greek translation team : joomla.gr (Modified for 3.0.3 by Nikitas Kyriazis)</author>
+	<version>3.1.0</version>
+	<creationDate>2013-05-21</creationDate>
+	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
 	<copyright>Copyright (c) 2005 - 2012 joomla.gr and Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description>el-GR administrator language</description>
 	<files>
-		<filename>index.html</filename>
 		<filename>el-GR.com_admin.ini</filename>
 		<filename>el-GR.com_admin.sys.ini</filename>
 		<filename>el-GR.com_banners.ini</filename>
@@ -57,6 +56,8 @@
 		<filename>el-GR.com_redirect.sys.ini</filename>
 		<filename>el-GR.com_search.ini</filename>
 		<filename>el-GR.com_search.sys.ini</filename>
+		<filename>el-GR.com_tags.ini</filename>
+		<filename>el-GR.com_tags.sys.ini</filename>
 		<filename>el-GR.com_templates.ini</filename>
 		<filename>el-GR.com_templates.sys.ini</filename>
 		<filename>el-GR.com_users.ini</filename>
@@ -122,12 +123,6 @@
 		<filename>el-GR.plg_content_pagenavigation.sys.ini</filename>
 		<filename>el-GR.plg_content_vote.ini</filename>
 		<filename>el-GR.plg_content_vote.sys.ini</filename>
-		<filename>el-GR.plg_editors_codemirror.ini</filename>
-		<filename>el-GR.plg_editors_codemirror.sys.ini</filename>
-		<filename>el-GR.plg_editors_none.ini</filename>
-		<filename>el-GR.plg_editors_none.sys.ini</filename>
-		<filename>el-GR.plg_editors_tinymce.ini</filename>
-		<filename>el-GR.plg_editors_tinymce.sys.ini</filename>
 		<filename>el-GR.plg_editors-xtd_article.ini</filename>
 		<filename>el-GR.plg_editors-xtd_article.sys.ini</filename>
 		<filename>el-GR.plg_editors-xtd_image.ini</filename>
@@ -136,6 +131,12 @@
 		<filename>el-GR.plg_editors-xtd_pagebreak.sys.ini</filename>
 		<filename>el-GR.plg_editors-xtd_readmore.ini</filename>
 		<filename>el-GR.plg_editors-xtd_readmore.sys.ini</filename>
+		<filename>el-GR.plg_editors_codemirror.ini</filename>
+		<filename>el-GR.plg_editors_codemirror.sys.ini</filename>
+		<filename>el-GR.plg_editors_none.ini</filename>
+		<filename>el-GR.plg_editors_none.sys.ini</filename>
+		<filename>el-GR.plg_editors_tinymce.ini</filename>
+		<filename>el-GR.plg_editors_tinymce.sys.ini</filename>
 		<filename>el-GR.plg_extension_joomla.ini</filename>
 		<filename>el-GR.plg_extension_joomla.sys.ini</filename>
 		<filename>el-GR.plg_finder_categories.ini</filename>
@@ -146,6 +147,8 @@
 		<filename>el-GR.plg_finder_content.sys.ini</filename>
 		<filename>el-GR.plg_finder_newsfeeds.ini</filename>
 		<filename>el-GR.plg_finder_newsfeeds.sys.ini</filename>
+		<filename>el-GR.plg_finder_tags.ini</filename>
+		<filename>el-GR.plg_finder_tags.sys.ini</filename>
 		<filename>el-GR.plg_finder_weblinks.ini</filename>
 		<filename>el-GR.plg_finder_weblinks.sys.ini</filename>
 		<filename>el-GR.plg_quickicon_extensionupdate.ini</filename>
@@ -194,6 +197,7 @@
 		<filename>el-GR.tpl_hathor.sys.ini</filename>
 		<filename>el-GR.tpl_isis.ini</filename>
 		<filename>el-GR.tpl_isis.sys.ini</filename>
+		<filename>index.html</filename>
 		<filename file="meta">install.xml</filename>
 		<filename file="meta">el-GR.xml</filename>
 	</files>

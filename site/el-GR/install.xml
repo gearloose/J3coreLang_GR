@@ -2,16 +2,15 @@
 <extension version="3.0" client="site" type="language" method="upgrade">
 	<name>Hellenic</name>
 	<tag>el-GR</tag>
-	<version>##VERSION##</version>
-	<creationDate>##DATE##</creationDate>
-	<author>Greek translation team : joomla.gr (Modified for 3.0.3 by Nikitas Kyriazis)</author>
+	<version>3.1.0</version>
+	<creationDate>2013-05-21</creationDate>
+	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
 	<copyright>Copyright (C) 2005 - 2012 joomla.gr and Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description>el-GR site language</description>
 	<files>
-		<filename>index.html</filename>
 		<filename>el-GR.com_contact.ini</filename>
 		<filename>el-GR.com_content.ini</filename>
 		<filename>el-GR.com_finder.ini</filename>
@@ -20,6 +19,7 @@
 		<filename>el-GR.com_messages.ini</filename>
 		<filename>el-GR.com_newsfeeds.ini</filename>
 		<filename>el-GR.com_search.ini</filename>
+		<filename>el-GR.com_tags.ini</filename>
 		<filename>el-GR.com_users.ini</filename>
 		<filename>el-GR.com_weblinks.ini</filename>
 		<filename>el-GR.com_wrapper.ini</filename>
@@ -72,6 +72,10 @@
 		<filename>el-GR.mod_stats.sys.ini</filename>
 		<filename>el-GR.mod_syndicate.ini</filename>
 		<filename>el-GR.mod_syndicate.sys.ini</filename>
+		<filename>el-GR.mod_tags_popular.ini</filename>
+		<filename>el-GR.mod_tags_popular.sys.ini</filename>
+		<filename>el-GR.mod_tags_similar.ini</filename>
+		<filename>el-GR.mod_tags_similar.sys.ini</filename>
 		<filename>el-GR.mod_users_latest.ini</filename>
 		<filename>el-GR.mod_users_latest.sys.ini</filename>
 		<filename>el-GR.mod_weblinks.ini</filename>
@@ -84,6 +88,7 @@
 		<filename>el-GR.tpl_beez3.sys.ini</filename>
 		<filename>el-GR.tpl_protostar.ini</filename>
 		<filename>el-GR.tpl_protostar.sys.ini</filename>
+		<filename>index.html</filename>
 		<filename file="meta">install.xml</filename>
 		<filename file="meta">el-GR.xml</filename>
 	</files>
