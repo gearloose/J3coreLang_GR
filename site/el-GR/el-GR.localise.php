@@ -184,6 +184,7 @@ abstract class el_GRLocalise {
 	}
 }
 
+/**
 jimport('joomla.utilities.date');
 $datefile = JPATH_ROOT . DIRECTORY_SEPARATOR . 'libraries' . DIRECTORY_SEPARATOR . 'joomla' . DIRECTORY_SEPARATOR . 'utilities' . DIRECTORY_SEPARATOR . 'date.php';
 
@@ -210,3 +211,4 @@ $fullcode = $parts1[0].$splitter1.$fullcode;
 $fullcode = str_replace('class JDate extends DateTime', 'class el_GRDate extends DateTime', $fullcode);
 
 eval($fullcode);
+**/
