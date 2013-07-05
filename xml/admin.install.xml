@@ -2,7 +2,7 @@
 <extension version="3.2" client="administrator" type="language" method="upgrade">
 	<name>Greek</name>
 	<tag>el-GR</tag>
-	<version>3.2.0</version>
+	<version>3.1.2.1</version>
 	<creationDate>2013-06-13</creationDate>
 	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
