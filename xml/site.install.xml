@@ -2,8 +2,8 @@
 <extension version="3.2" client="site" type="language" method="upgrade">
 	<name>Hellenic</name>
 	<tag>el-GR</tag>
-	<version>3.1.2.1</version>
-	<creationDate>2013-06-13</creationDate>
+	<version>3.1.5.1</version>
+	<creationDate>2013-08-17</creationDate>
 	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
@@ -26,6 +26,8 @@
 		<filename>el-GR.files_joomla.sys.ini</filename>
 		<filename>el-GR.finder_cli.ini</filename>
 		<filename>el-GR.ini</filename>
+		<filename>el-GR.lib_idna_convert.ini</filename>
+		<filename>el-GR.lib_idna_convert.sys.ini</filename>
 		<filename>el-GR.lib_joomla.ini</filename>
 		<filename>el-GR.lib_joomla.sys.ini</filename>
 		<filename>el-GR.lib_phpmailer.sys.ini</filename>
