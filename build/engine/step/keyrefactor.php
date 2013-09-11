@@ -147,9 +147,9 @@ class LbStepKeyrefactor extends LbAbstractPart
 					}
 					else
 					{
-						$output .= $key . '"';
-						$output .= str_replace('"\""', '_QQ_', $trans);
-						$output .= str_replace('"', '_QQ_', $trans);
+						$output .= $key . '="';
+						$x = str_replace('"\""', '_QQ_', $trans);
+						$output .= str_replace('"', '_QQ_', $x);
 						$output .= '"' . "\n";
 					}
 				}
