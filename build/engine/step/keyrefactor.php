@@ -138,18 +138,21 @@ class LbStepKeyrefactor extends LbAbstractPart
 					$key = $parts[0];
 
 					$trans = $lTrans->_($key);
-					if ((($trans == $key) || ($trans == $lMaster->_($key))) && !in_array($key, $this->ignoreKeys))
+					if ((($trans == $key) || ($trans == $lMaster->_($key))))
 					{
 						// Untranslated string
-						$missingKeys[] = $key;
-						$totalMissing++;
+						if (!in_array($key, $this->ignoreKeys))
+						{
+							$missingKeys[] = $key;
+							$totalMissing++;
+						}
 						$output .= $line . "\n";
 					}
 					else
 					{
 						$output .= $key . '="';
-						$x = str_replace('"\""', '_QQ_', $trans);
-						$output .= str_replace('"', '_QQ_', $x);
+						$x = str_replace('"\""', '"_QQ_"', $trans);
+						$output .= str_replace('"', '"_QQ_"', $x);
 						$output .= '"' . "\n";
 					}
 				}

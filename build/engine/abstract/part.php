@@ -195,7 +195,20 @@ abstract class LbAbstractPart extends LbAbstractObject
 		}
 		else
 		{
-			$this->_parametersArray = $parametersArray;
+			$json = file_get_contents(__DIR__ . '/../../config.json');
+			$config = json_decode($json, true);
+
+			if (!is_array($config))
+			{
+				$config = array();
+			}
+
+			if (!is_array($parametersArray))
+			{
+				$parametersArray = array();
+			}
+
+			$this->_parametersArray = array_merge($config, $parametersArray);
 		}
 	}
 
