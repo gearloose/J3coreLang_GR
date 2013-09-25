@@ -13,6 +13,7 @@ class LbStepPackage extends LbAbstractPart
 	private $overwrite = false;
 	private $shortversion = null;
 	private $version = null;
+	private $jversion = null;
 	private $date = null;
 
 	/**
@@ -27,6 +28,8 @@ class LbStepPackage extends LbAbstractPart
 
 		$this->version = $this->_parametersArray['version'] . '.' .
 			$this->_parametersArray['revision'];
+
+		$this->jversion = $this->_parametersArray['version'];
 
 		// Get the short version (3.1, 3.2, ...)
 		$parts = explode('.', $this->version, 3);
@@ -90,6 +93,7 @@ class LbStepPackage extends LbAbstractPart
 
 				$contents = str_replace('##INIFILES##', $iniFilesString, $contents);
 				$contents = str_replace('##VERSION##', $this->version, $contents);
+				$contents = str_replace('##JVERSION##', $this->jversion, $contents);
 				$contents = str_replace('##SHORTVERSION##', $this->shortversion, $contents);
 				$contents = str_replace('##DATE##', $this->date, $contents);
 
@@ -125,6 +129,7 @@ class LbStepPackage extends LbAbstractPart
 		{
 			$contents = str_replace('##INIFILES##', $iniFilesString, $contents);
 			$contents = str_replace('##VERSION##', $this->version, $contents);
+			$contents = str_replace('##JVERSION##', $this->jversion, $contents);
 			$contents = str_replace('##SHORTVERSION##', $this->shortversion, $contents);
 			$contents = str_replace('##DATE##', $this->date, $contents);
 
