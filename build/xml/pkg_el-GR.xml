@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="package" version="3.0">
+<extension type="package" version="##SHORTVERSION##">
 	<name>Greek Language Pack</name>
 	<packagename>el-GR</packagename>
 	<version>##VERSION##</version>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<metafile version="3.1" client="site">
+<metafile version="##SHORTVERSION##" client="site">
 	<name>Greek</name>
 	<version>##VERSION##</version>
 	<creationDate>##DATE##</creationDate>
