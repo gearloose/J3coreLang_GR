@@ -102,7 +102,7 @@ class LbStepPackage extends LbAbstractPart
 			// Generate ZIP file
 			$zip = new ZipArchive();
 			$zip->open($zipPath, ZipArchive::OVERWRITE);
-			foreach (glob($transPath . '/*.{ini,php,xml}', GLOB_BRACE) as $file)
+			foreach (glob($transPath . '/*.{ini,php,xml,html,htm}', GLOB_BRACE) as $file)
 			{
 				$zip->addFile($file, basename($file));
 			}
