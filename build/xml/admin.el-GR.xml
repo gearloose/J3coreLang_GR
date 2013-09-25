@@ -2,7 +2,7 @@
 <metafile version="##SHORTVERSION##" client="administrator">
 	<name>Greek</name>
 	<version>##VERSION##</version>
-	<creationDate>2013-08-17</creationDate>
+	<creationDate>##DATE##</creationDate>
 	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
