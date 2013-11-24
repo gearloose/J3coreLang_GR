@@ -39,15 +39,22 @@ class LbStepImport extends LbAbstractPart
 
 		// Determine the main path
 		$transPath = $this->rootDir . '/' . $this->transLang;
+		$masterPath = $this->rootDir . '/' . $this->masterLang;
 
 		foreach ($this->overrides as $file => $overrides)
 		{
 			// Get the path for the file
 			$transFilePath = $transPath . '/' . $file;
+			$masterFilepath = $masterPath . '/' . $file;
+			$masterFilepath = str_replace($this->transLang, $this->masterLang, $masterFilepath);
 
 			// Load the translation file
 			$lTrans = new LbUtilLang();
 			$lTrans->load($transFilePath);
+
+			// Load the master file
+			$mTrans = new LbUtilLang();
+			$mTrans->load($masterPath);
 
 			// Go through all translation lines and replace the overrides
 			$transLines = $lTrans->getLines();
@@ -91,16 +98,41 @@ class LbStepImport extends LbAbstractPart
 				// Figure out the translation
 				$parts = explode('=', $line, 2);
 				$key = $parts[0];
+				$value = $parts[1];
+
+				$translated = false;
 
 				if (array_key_exists($key, $overrides))
 				{
+					// Get overridden translation
 					$t = $overrides[$key];
-					$output .= $key . '="';
-					$x = str_replace('"\""', '"_QQ_"', $t);
-					$output .= str_replace('"', '"_QQ_"', $x);
-					$output .= '"' . "\n";
+
+					// Get master language string
+					$m = $mTrans->_($key);
+
+					// Normalise original translated value
+					$value = str_replace('"\""', '"_QQ_"', $value);
+					$value = str_replace('"', '"_QQ_"', $value);
+
+					// Normalise overridden value
+					$t = str_replace('"\""', '"_QQ_"', $t);
+					$t = str_replace('"', '"_QQ_"', $t);
+
+					// Normalise master value
+					$m = str_replace('"\""', '"_QQ_"', $m);
+					$m = str_replace('"', '"_QQ_"', $m);
+
+					// Make sure the override is not the same as the original translation or the master string
+					if (($t != $m) && ($t != $value))
+					{
+						// Write override to the file
+						$output .= $key . '="' . $t . '"' . "\n";
+					}
+
+					$translated = true;
 				}
-				else
+
+				if (!$translated)
 				{
 					$output .= $line . "\n";
 				}
