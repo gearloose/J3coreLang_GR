@@ -2,17 +2,19 @@
 <extension version="3.2" client="administrator" type="language" method="upgrade">
 	<name>Greek</name>
 	<tag>el-GR</tag>
-	<version>3.1.5.1</version>
-	<creationDate>2013-09-18</creationDate>
+	<version>3.2.0.1</version>
+	<creationDate>2014-07-30</creationDate>
 	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
-	<copyright>Copyright (c) 2005 - 2013 joomla.gr and Open Source Matters. All rights reserved.</copyright>
+	<copyright>Copyright (C) 2005 - 2013 joomla.gr και Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License έκδοση 2 ή νεότερη· δες LICENSE.txt</license>
-	<description>Greek language pack for Joomla! ##JVERSION##</description>
+	<description>Greek language pack for Joomla! 3.2.0</description>
 	<files>
 				<filename>el-GR.com_admin.ini</filename>
 		<filename>el-GR.com_admin.sys.ini</filename>
+		<filename>el-GR.com_ajax.ini</filename>
+		<filename>el-GR.com_ajax.sys.ini</filename>
 		<filename>el-GR.com_banners.ini</filename>
 		<filename>el-GR.com_banners.sys.ini</filename>
 		<filename>el-GR.com_cache.ini</filename>
@@ -27,6 +29,8 @@
 		<filename>el-GR.com_contact.sys.ini</filename>
 		<filename>el-GR.com_content.ini</filename>
 		<filename>el-GR.com_content.sys.ini</filename>
+		<filename>el-GR.com_contenthistory.ini</filename>
+		<filename>el-GR.com_contenthistory.sys.ini</filename>
 		<filename>el-GR.com_cpanel.ini</filename>
 		<filename>el-GR.com_cpanel.sys.ini</filename>
 		<filename>el-GR.com_finder.ini</filename>
@@ -52,6 +56,8 @@
 		<filename>el-GR.com_newsfeeds.sys.ini</filename>
 		<filename>el-GR.com_plugins.ini</filename>
 		<filename>el-GR.com_plugins.sys.ini</filename>
+		<filename>el-GR.com_postinstall.ini</filename>
+		<filename>el-GR.com_postinstall.sys.ini</filename>
 		<filename>el-GR.com_redirect.ini</filename>
 		<filename>el-GR.com_redirect.sys.ini</filename>
 		<filename>el-GR.com_search.ini</filename>
@@ -98,6 +104,8 @@
 		<filename>el-GR.mod_toolbar.sys.ini</filename>
 		<filename>el-GR.mod_version.ini</filename>
 		<filename>el-GR.mod_version.sys.ini</filename>
+		<filename>el-GR.plg_authentication_cookie.ini</filename>
+		<filename>el-GR.plg_authentication_cookie.sys.ini</filename>
 		<filename>el-GR.plg_authentication_gmail.ini</filename>
 		<filename>el-GR.plg_authentication_gmail.sys.ini</filename>
 		<filename>el-GR.plg_authentication_joomla.ini</filename>
@@ -106,6 +114,8 @@
 		<filename>el-GR.plg_authentication_ldap.sys.ini</filename>
 		<filename>el-GR.plg_captcha_recaptcha.ini</filename>
 		<filename>el-GR.plg_captcha_recaptcha.sys.ini</filename>
+		<filename>el-GR.plg_content_contact.ini</filename>
+		<filename>el-GR.plg_content_contact.sys.ini</filename>
 		<filename>el-GR.plg_content_emailcloak.ini</filename>
 		<filename>el-GR.plg_content_emailcloak.sys.ini</filename>
 		<filename>el-GR.plg_content_finder.ini</filename>
@@ -148,6 +158,8 @@
 		<filename>el-GR.plg_finder_tags.sys.ini</filename>
 		<filename>el-GR.plg_finder_weblinks.ini</filename>
 		<filename>el-GR.plg_finder_weblinks.sys.ini</filename>
+		<filename>el-GR.plg_installer_webinstaller.ini</filename>
+		<filename>el-GR.plg_installer_webinstaller.sys.ini</filename>
 		<filename>el-GR.plg_quickicon_extensionupdate.ini</filename>
 		<filename>el-GR.plg_quickicon_extensionupdate.sys.ini</filename>
 		<filename>el-GR.plg_quickicon_joomlaupdate.ini</filename>
@@ -160,6 +172,8 @@
 		<filename>el-GR.plg_search_content.sys.ini</filename>
 		<filename>el-GR.plg_search_newsfeeds.ini</filename>
 		<filename>el-GR.plg_search_newsfeeds.sys.ini</filename>
+		<filename>el-GR.plg_search_tags.ini</filename>
+		<filename>el-GR.plg_search_tags.sys.ini</filename>
 		<filename>el-GR.plg_search_weblinks.ini</filename>
 		<filename>el-GR.plg_search_weblinks.sys.ini</filename>
 		<filename>el-GR.plg_system_cache.ini</filename>
@@ -184,6 +198,10 @@
 		<filename>el-GR.plg_system_remember.sys.ini</filename>
 		<filename>el-GR.plg_system_sef.ini</filename>
 		<filename>el-GR.plg_system_sef.sys.ini</filename>
+		<filename>el-GR.plg_twofactorauth_totp.ini</filename>
+		<filename>el-GR.plg_twofactorauth_totp.sys.ini</filename>
+		<filename>el-GR.plg_twofactorauth_yubikey.ini</filename>
+		<filename>el-GR.plg_twofactorauth_yubikey.sys.ini</filename>
 		<filename>el-GR.plg_user_contactcreator.ini</filename>
 		<filename>el-GR.plg_user_contactcreator.sys.ini</filename>
 		<filename>el-GR.plg_user_joomla.ini</filename>
