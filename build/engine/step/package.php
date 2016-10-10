@@ -111,7 +111,7 @@ class LbStepPackage extends LbAbstractPart
 
 			// Generate ZIP file
 			$zip = new ZipArchive();
-			$zip->open($zipPath, ZipArchive::OVERWRITE);
+			$zip->open($zipPath, ZipArchive::CREATE | ZipArchive::OVERWRITE);
 			foreach (glob($transPath . '/*.{ini,php,xml,html,htm}', GLOB_BRACE) as $file)
 			{
 				$zip->addFile($file, basename($file));
@@ -144,7 +144,7 @@ class LbStepPackage extends LbAbstractPart
 		@unlink($zipPath);
 
 		$zip = new ZipArchive();
-		$zip->open($zipPath, ZipArchive::OVERWRITE);
+		$zip->open($zipPath, ZipArchive::CREATE | ZipArchive::OVERWRITE);
 		foreach ($allZipFiles as $file)
 		{
 			$zip->addFile($file, basename($file));

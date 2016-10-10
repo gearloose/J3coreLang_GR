@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <metafile version="3.6" client="site">
-	<name>Greek (Ελληνικά)</name>
-    <version>3.6.2</version>
-    <creationDate>August 2016</creationDate>
-    <author>Greek translation team : joomla.gr</author>
-    <authorEmail>joomla@joomla.gr</authorEmail>
-    <authorUrl>http://www.joomla.gr</authorUrl>
-    <copyright>Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.</copyright>
-    <license>GNU General Public License έκδοση 2 ή νεότερη - δείτε το LICENSE.txt</license>
-    <description> Αρχεία ελληνικής γλώσσας για την έκδοση Joomla! 3.6 από την ομάδα του joomla.gr</description>
+	<name>Greek</name>
+	<version>3.6.3.1</version>
+	<creationDate>2016-10-10</creationDate>
+	<author>Greek translation team : joomla.gr</author>
+	<authorEmail>joomla@joomla.gr</authorEmail>
+	<authorUrl>http://www.joomla.gr</authorUrl>
+	<copyright>Copyright (C) 2005 - 2013 joomla.gr και Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License έκδοση 2 ή νεότερη· δες LICENSE.txt</license>
+	<description>Greek language pack for Joomla! 3.6.3</description>
 	<metadata>
 		<name>Greek</name>
 		<tag>el-GR</tag>
