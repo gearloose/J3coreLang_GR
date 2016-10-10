@@ -185,28 +185,4 @@ abstract class el_GRLocalise {
 }
 
 jimport('joomla.utilities.date');
-$datefile = JPATH_ROOT . DIRECTORY_SEPARATOR . 'libraries' . DIRECTORY_SEPARATOR . 'joomla' . DIRECTORY_SEPARATOR . 'utilities' . DIRECTORY_SEPARATOR . 'date.php';
-
-$fh = fopen($datefile, 'r');
-$theData = fread($fh, filesize($datefile));
-fclose($fh);
-
-$theData = str_replace('<?php', '', $theData);
-
-$splitter1 = 'public function format(';
-$splitter2 = 'return $return;';
-
-$parts1 = explode($splitter1, $theData);
-$parts2 = explode($splitter2, $parts1[1]);
-
-$parts2[0] .= 'if(preg_match("/d|j/", $format)){';
-$parts2[0] .= '$orig_months = array("άριος", "άρτιος", "ίλιος", "άιος", "ύνιος", "ύλιος", "ύγουστος", "έμβριος", "ώβριος");';
-$parts2[0] .= '$new_months = array("αρίου", "αρτίου", "ιλίου", "αΐου", "υνίου", "υλίου", "υγούστου", "εμβρίου", "ωβρίου");';
-$parts2[0] .= 'for ($i = 0; $i < count($orig_months); $i++) $return = str_replace($orig_months[$i], $new_months[$i], $return);';
-$parts2[0] .= '}';
-
-$fullcode = implode($splitter2, $parts2);
-$fullcode = $parts1[0].$splitter1.$fullcode;
-$fullcode = str_replace('class JDate extends DateTime', 'class el_GRDate extends DateTime', $fullcode);
-
-eval($fullcode);
+include_once __DIR__ . '/el-GR.date.php';
