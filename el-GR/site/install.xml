@@ -3,7 +3,7 @@
 	<name>Hellenic</name>
 	<tag>el-GR</tag>
 	<version>3.6.3.1</version>
-	<creationDate>2016-10-10</creationDate>
+	<creationDate>2016-10-11</creationDate>
 	<author>Greek translation team : joomla.gr</author>
 	<authorEmail>joomla@joomla.gr</authorEmail>
 	<authorUrl>http://www.joomla.gr</authorUrl>
@@ -96,6 +96,7 @@
 
 		<filename>index.html</filename>
 		<filename>el-GR.localise.php</filename>
+        <filename>el-GR.date.php</filename>
 		<filename file="meta">install.xml</filename>
 		<filename file="meta">el-GR.xml</filename>
 	</files>

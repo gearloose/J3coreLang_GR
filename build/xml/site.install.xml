@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="##SHORTVERSION##" client="site" type="language" method="upgrade">
-	<name>Hellenic</name>
+	<name>Greek</name>
 	<tag>el-GR</tag>
 	<version>##VERSION##</version>
 	<creationDate>##DATE##</creationDate>
@@ -11,10 +11,11 @@
 	<license>GNU General Public License έκδοση 2 ή νεότερη· δες LICENSE.txt</license>
 	<description>Greek language pack for Joomla! ##JVERSION##</description>
 	<files>
-		##INIFILES##
+##INIFILES##
 
 		<filename>index.html</filename>
 		<filename>el-GR.localise.php</filename>
+        <filename>el-GR.date.php</filename>
 		<filename file="meta">install.xml</filename>
 		<filename file="meta">el-GR.xml</filename>
 	</files>
